@@ -127,7 +127,7 @@ class DblClickDragZoom extends Interaction {
 
     const touch0 = this.targetPointers[0];
     const touch1 = this.down_.originalEvent;
-    const distance = touch0.clientY - touch1.clientY;
+    const distance = -(touch0.clientY - touch1.clientY);
 
     if (this.lastDistance_ !== undefined) {
       scaleDelta =
